@@ -1,0 +1,1099 @@
+{
+  "duration": 66.2999999999994,
+  "events": [
+    {
+      "name": "initial",
+      "time": 0.0
+    },
+    {
+      "name": "bag_A",
+      "time": 3.1999999999999984,
+      "bag": [
+        "A",
+        "B",
+        "F"
+      ]
+    },
+    {
+      "name": "saved_SC_A",
+      "time": 3.6999999999999966,
+      "sc": {
+        "B": 2,
+        "F": 4
+      }
+    },
+    {
+      "name": "bag_D",
+      "time": 7.666666666666654,
+      "bag": [
+        "D",
+        "C",
+        "E"
+      ]
+    },
+    {
+      "name": "saved_SC_D",
+      "time": 8.166666666666652,
+      "sc": {
+        "C": 2,
+        "E": 3
+      }
+    },
+    {
+      "name": "bag_B",
+      "time": 13.599999999999968,
+      "bag": [
+        "B",
+        "C",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "name": "saved_SC_B",
+      "time": 14.099999999999966,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 6
+      }
+    },
+    {
+      "name": "bag_C",
+      "time": 17.933333333333383,
+      "bag": [
+        "C",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "name": "saved_SC_C",
+      "time": 18.433333333333408,
+      "sc": {
+        "E": 5,
+        "F": 6
+      }
+    },
+    {
+      "name": "bag_E",
+      "time": 21.36666666666684,
+      "bag": [
+        "E",
+        "F"
+      ]
+    },
+    {
+      "name": "saved_SC_E",
+      "time": 21.866666666666866,
+      "sc": {
+        "F": 2
+      }
+    },
+    {
+      "name": "bag_F",
+      "time": 24.33333333333361,
+      "bag": [
+        "F"
+      ]
+    },
+    {
+      "name": "saved_SC_F",
+      "time": 24.73333333333363,
+      "sc": {}
+    },
+    {
+      "name": "tree_complete",
+      "time": 26.00000000000032
+    },
+    {
+      "name": "labels_begin",
+      "time": 27.900000000000368
+    },
+    {
+      "name": "derive_F_F",
+      "time": 28.933333333333746,
+      "sc": {},
+      "reads": [],
+      "terms": {},
+      "value": 0,
+      "formula": "L(F,F) = 0"
+    },
+    {
+      "name": "derive_E_F",
+      "time": 30.400000000000457,
+      "sc": {
+        "F": 2
+      },
+      "reads": [],
+      "terms": {
+        "F": 2
+      },
+      "value": 2,
+      "formula": "L(E,F) = 2+0 = 2"
+    },
+    {
+      "name": "derive_C_E",
+      "time": 31.833333333333833,
+      "sc": {
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "E": 5,
+        "F": 8
+      },
+      "value": 5,
+      "formula": "L(C,E) = min(5+0, 6+2) = 5"
+    },
+    {
+      "name": "derive_C_F",
+      "time": 33.00000000000046,
+      "sc": {
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "E": 7,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(C,F) = min(5+2, 6+0) = 6"
+    },
+    {
+      "name": "derive_B_C",
+      "time": 34.43333333333374,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 3,
+        "E": 10,
+        "F": 12
+      },
+      "value": 3,
+      "formula": "L(B,C) = min(3+0, 5+5, 6+6) = 3"
+    },
+    {
+      "name": "derive_B_E",
+      "time": 35.60000000000037,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 8,
+        "E": 5,
+        "F": 8
+      },
+      "value": 5,
+      "formula": "L(B,E) = min(3+5, 5+0, 6+2) = 5"
+    },
+    {
+      "name": "derive_B_F",
+      "time": 36.766666666667,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 9,
+        "E": 7,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(B,F) = min(3+6, 5+2, 6+0) = 6"
+    },
+    {
+      "name": "derive_D_C",
+      "time": 38.20000000000028,
+      "sc": {
+        "C": 2,
+        "E": 3
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ]
+      ],
+      "terms": {
+        "C": 2,
+        "E": 8
+      },
+      "value": 2,
+      "formula": "L(D,C) = min(2+0, 3+5) = 2"
+    },
+    {
+      "name": "derive_D_E",
+      "time": 39.36666666666691,
+      "sc": {
+        "C": 2,
+        "E": 3
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ]
+      ],
+      "terms": {
+        "C": 7,
+        "E": 3
+      },
+      "value": 3,
+      "formula": "L(D,E) = min(2+5, 3+0) = 3"
+    },
+    {
+      "name": "derive_D_F",
+      "time": 40.53333333333354,
+      "sc": {
+        "C": 2,
+        "E": 3
+      },
+      "reads": [
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 8,
+        "E": 5
+      },
+      "value": 5,
+      "formula": "L(D,F) = min(2+6, 3+2) = 5"
+    },
+    {
+      "name": "derive_A_B",
+      "time": 41.96666666666682,
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 2,
+        "F": 10
+      },
+      "value": 2,
+      "formula": "L(A,B) = min(2+0, 4+6) = 2"
+    },
+    {
+      "name": "derive_A_C",
+      "time": 43.13333333333345,
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 5,
+        "F": 10
+      },
+      "value": 5,
+      "formula": "L(A,C) = min(2+3, 4+6) = 5"
+    },
+    {
+      "name": "derive_A_E",
+      "time": 44.300000000000075,
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 7,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(A,E) = min(2+5, 4+2) = 6"
+    },
+    {
+      "name": "derive_A_F",
+      "time": 45.70000000000004,
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 8,
+        "F": 4
+      },
+      "value": 4,
+      "formula": "L(A,F) = min(2+6, 4+0) = 4"
+    },
+    {
+      "name": "labels_complete",
+      "time": 46.10000000000004
+    },
+    {
+      "name": "query_before",
+      "time": 47.76666666666665
+    },
+    {
+      "name": "dynamic_begin",
+      "time": 48.96666666666664
+    },
+    {
+      "name": "SC_A_updated",
+      "time": 50.86666666666653,
+      "sc": {
+        "B": 9,
+        "F": 4
+      }
+    },
+    {
+      "name": "SC_B_updated",
+      "time": 52.56666666666647,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 13
+      }
+    },
+    {
+      "name": "shortcut_phase_done",
+      "time": 54.73333333333309
+    },
+    {
+      "name": "update_B_C",
+      "time": 56.366666666666376,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 13
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 3,
+        "E": 10,
+        "F": 19
+      },
+      "value": 3,
+      "formula": "L(B,C) = min(3+0, 5+5, 13+6) = 3"
+    },
+    {
+      "name": "update_B_E",
+      "time": 57.433333333333,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 13
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 8,
+        "E": 5,
+        "F": 15
+      },
+      "value": 5,
+      "formula": "L(B,E) = min(3+5, 5+0, 13+2) = 5"
+    },
+    {
+      "name": "update_B_F",
+      "time": 58.49999999999963,
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 13
+      },
+      "reads": [
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 9,
+        "E": 7,
+        "F": 13
+      },
+      "value": 7,
+      "formula": "L(B,F) = min(3+6, 5+2, 13+0) = 7"
+    },
+    {
+      "name": "update_A_B",
+      "time": 60.03333333333291,
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 9,
+        "F": 11
+      },
+      "value": 9,
+      "formula": "L(A,B) = min(9+0, 4+7) = 9"
+    },
+    {
+      "name": "update_A_C",
+      "time": 61.09999999999954,
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 12,
+        "F": 10
+      },
+      "value": 10,
+      "formula": "L(A,C) = min(9+3, 4+6) = 10"
+    },
+    {
+      "name": "update_A_E",
+      "time": 62.36666666666617,
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 14,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(A,E) = min(9+5, 4+2) = 6"
+    },
+    {
+      "name": "update_A_F",
+      "time": 63.4333333333328,
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 16,
+        "F": 4
+      },
+      "value": 4,
+      "formula": "L(A,F) = min(9+7, 4+0) = 4"
+    },
+    {
+      "name": "labels_phase_done",
+      "time": 63.733333333332794
+    },
+    {
+      "name": "query_after",
+      "time": 64.6999999999994
+    },
+    {
+      "name": "end",
+      "time": 66.2999999999994
+    }
+  ],
+  "formula_checks": [
+    {
+      "v": "F",
+      "a": "F",
+      "sc": {},
+      "reads": [],
+      "terms": {},
+      "value": 0,
+      "formula": "L(F,F) = 0",
+      "updating": false
+    },
+    {
+      "v": "E",
+      "a": "F",
+      "sc": {
+        "F": 2
+      },
+      "reads": [],
+      "terms": {
+        "F": 2
+      },
+      "value": 2,
+      "formula": "L(E,F) = 2+0 = 2",
+      "updating": false
+    },
+    {
+      "v": "C",
+      "a": "E",
+      "sc": {
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "E": 5,
+        "F": 8
+      },
+      "value": 5,
+      "formula": "L(C,E) = min(5+0, 6+2) = 5",
+      "updating": false
+    },
+    {
+      "v": "C",
+      "a": "F",
+      "sc": {
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "E": 7,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(C,F) = min(5+2, 6+0) = 6",
+      "updating": false
+    },
+    {
+      "v": "B",
+      "a": "C",
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 3,
+        "E": 10,
+        "F": 12
+      },
+      "value": 3,
+      "formula": "L(B,C) = min(3+0, 5+5, 6+6) = 3",
+      "updating": false
+    },
+    {
+      "v": "B",
+      "a": "E",
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 8,
+        "E": 5,
+        "F": 8
+      },
+      "value": 5,
+      "formula": "L(B,E) = min(3+5, 5+0, 6+2) = 5",
+      "updating": false
+    },
+    {
+      "v": "B",
+      "a": "F",
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 6
+      },
+      "reads": [
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 9,
+        "E": 7,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(B,F) = min(3+6, 5+2, 6+0) = 6",
+      "updating": false
+    },
+    {
+      "v": "D",
+      "a": "C",
+      "sc": {
+        "C": 2,
+        "E": 3
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ]
+      ],
+      "terms": {
+        "C": 2,
+        "E": 8
+      },
+      "value": 2,
+      "formula": "L(D,C) = min(2+0, 3+5) = 2",
+      "updating": false
+    },
+    {
+      "v": "D",
+      "a": "E",
+      "sc": {
+        "C": 2,
+        "E": 3
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ]
+      ],
+      "terms": {
+        "C": 7,
+        "E": 3
+      },
+      "value": 3,
+      "formula": "L(D,E) = min(2+5, 3+0) = 3",
+      "updating": false
+    },
+    {
+      "v": "D",
+      "a": "F",
+      "sc": {
+        "C": 2,
+        "E": 3
+      },
+      "reads": [
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 8,
+        "E": 5
+      },
+      "value": 5,
+      "formula": "L(D,F) = min(2+6, 3+2) = 5",
+      "updating": false
+    },
+    {
+      "v": "A",
+      "a": "B",
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 2,
+        "F": 10
+      },
+      "value": 2,
+      "formula": "L(A,B) = min(2+0, 4+6) = 2",
+      "updating": false
+    },
+    {
+      "v": "A",
+      "a": "C",
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 5,
+        "F": 10
+      },
+      "value": 5,
+      "formula": "L(A,C) = min(2+3, 4+6) = 5",
+      "updating": false
+    },
+    {
+      "v": "A",
+      "a": "E",
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 7,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(A,E) = min(2+5, 4+2) = 6",
+      "updating": false
+    },
+    {
+      "v": "A",
+      "a": "F",
+      "sc": {
+        "B": 2,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 8,
+        "F": 4
+      },
+      "value": 4,
+      "formula": "L(A,F) = min(2+6, 4+0) = 4",
+      "updating": false
+    },
+    {
+      "v": "B",
+      "a": "C",
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 13
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 3,
+        "E": 10,
+        "F": 19
+      },
+      "value": 3,
+      "formula": "L(B,C) = min(3+0, 5+5, 13+6) = 3",
+      "updating": true
+    },
+    {
+      "v": "B",
+      "a": "E",
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 13
+      },
+      "reads": [
+        [
+          "C",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 8,
+        "E": 5,
+        "F": 15
+      },
+      "value": 5,
+      "formula": "L(B,E) = min(3+5, 5+0, 13+2) = 5",
+      "updating": true
+    },
+    {
+      "v": "B",
+      "a": "F",
+      "sc": {
+        "C": 3,
+        "E": 5,
+        "F": 13
+      },
+      "reads": [
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "C": 9,
+        "E": 7,
+        "F": 13
+      },
+      "value": 7,
+      "formula": "L(B,F) = min(3+6, 5+2, 13+0) = 7",
+      "updating": true
+    },
+    {
+      "v": "A",
+      "a": "B",
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 9,
+        "F": 11
+      },
+      "value": 9,
+      "formula": "L(A,B) = min(9+0, 4+7) = 9",
+      "updating": true
+    },
+    {
+      "v": "A",
+      "a": "C",
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 12,
+        "F": 10
+      },
+      "value": 10,
+      "formula": "L(A,C) = min(9+3, 4+6) = 10",
+      "updating": true
+    },
+    {
+      "v": "A",
+      "a": "E",
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 14,
+        "F": 6
+      },
+      "value": 6,
+      "formula": "L(A,E) = min(9+5, 4+2) = 6",
+      "updating": true
+    },
+    {
+      "v": "A",
+      "a": "F",
+      "sc": {
+        "B": 9,
+        "F": 4
+      },
+      "reads": [
+        [
+          "B",
+          "F"
+        ]
+      ],
+      "terms": {
+        "B": 16,
+        "F": 4
+      },
+      "value": 4,
+      "formula": "L(A,F) = min(9+7, 4+0) = 4",
+      "updating": true
+    }
+  ],
+  "SC_meaning": "saved incident edges to remaining neighbors"
+}

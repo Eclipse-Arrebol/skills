@@ -1,0 +1,4 @@
+interface:
+  display_name: "算法教学动画"
+  short_description: "简洁无声的 Manim 算法演示，结构、保存数据和逐项计算同步可见"
+  default_prompt: "请用 $algorithm-animation 制作一段简洁无声的算法教学动画，保留必要状态，并展示每次计算的数据来源。"
