@@ -1,0 +1,4 @@
+interface:
+  display_name: "逐步互动教学"
+  short_description: "每轮只讲一个知识点，沿用小例子并根据理解反馈与追问逐步推进"
+  default_prompt: "请使用 $stepwise-teaching 慢慢教我这个主题，每轮只讲一个知识点，沿用同一个小例子，并根据我的反馈继续。"
